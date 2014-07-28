@@ -1,0 +1,84 @@
+Practica
+
+- Que permisologia tiene los siguientes archivos
+rwxrwx---  770  
+---------  000
+rw-rw----  660
+r-xr-xr-x  555
+---rw-r-x  065
+--x--x--x  111
+
+
+- Ejecuten la búsqueda con grep buscando cunaguaro y guarde la salida en un archivo llamado
+firefox.txt
+ps aux | grep cunaguaro > firefox.txt
+
+-Cuanto pesa tu /home/ y cuanto pesa /etc
+
+
+root@canaima-popular:/home/usuario/control/curso# df -h /home
+S.ficheros     Tamaño Usados  Disp Uso% Montado en
+/dev/sda5         46G   374M   43G   1% /home
+
+
+
+- Se requiere guardar un archivo dentro de la configuración de la memoria del computador dentro
+de un archivo llamado memoria.txt
+
+root@canaima-popular:/home/usuario/control/curso# cat /proc/meminfo > memoria.txt
+
+
+
+-Se requiere guardar toda la configuración de la versión del kernel en un archivo llamado kernel.txt
+
+root@canaima-popular:/home/usuario/control/curso# cat /proc/version > kernel.txt
+root@canaima-popular:/home/usuario/control/curso# cat kernel.txt 
+Linux version 3.2.0-4-686-pae (debian-kernel@lists.debian.org) (gcc version 4.6.3 (Debian 4.6.3-14) ) #1 SMP Debian 3.2.51-1
+
+
+- Como matamos un proceso del computador
+  Tiene que estar como root  #kill -9 nroproceso
+
+- Que hace el respectivo comando $cat toto > toto2
+ Pasa la informacion del archivo toto al archivo toto2, si toto2 tiene informacion la borra.
+
+- Como puedo visualizar las particiones del disco duro
+  #df -h
+
+- Cree una carpeta con tu nombre
+ #mkdir ivan
+
+- Dentro de la carpeta, creamos tres archivos de nombre c1 c2 c3 
+
+root@canaima-popular:/home/usuario/control/curso/ivan# touch c1 c2 c3
+root@canaima-popular:/home/usuario/control/curso/ivan# ls -l
+total 0
+-rw-r--r-- 1 root root 0 jul 28 14:04 c1
+-rw-r--r-- 1 root root 0 jul 28 14:04 c2
+-rw-r--r-- 1 root root 0 jul 28 14:04 c3
+
+- Guardamos en el c1 su nombre completo
+root@canaima-popular:/home/usuario/control/curso/ivan# nano c1
+root@canaima-popular:/home/usuario/control/curso/ivan# more c1
+Ivan Edmundo Delgado Zerpa
+
+- Guardamos el c3 el correo electrónico
+root@canaima-popular:/home/usuario/control/curso/ivan# nano c3
+root@canaima-popular:/home/usuario/control/curso/ivan# more c3
+ivan.delgado.zerpa@gmail.com
+
+- Describa a continuación la función de los siguientes directorios
+
+/bin    
+
+/home/  Guarda informacion de todos los usuarios del sistema operativo  
+
+/media  Informacion de los dispositivos como cdroom, usb, otros.
+
+/var  
+
+/       Directorio Raiz	
+
+/sbin  Guarda la informacion de los archivos ejecutables del Sistema Operativo
+
+/boot  Guarda los parametros de inicio del equipo (GRUB)
